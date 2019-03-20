@@ -10,9 +10,6 @@ These instructions will get you a copy of the project up and running on your loc
 
 Nothing extra (bundler, ompiler) is required, just pure HTML, CSS and JS files
 
-```
-Give examples
-```
 
 ### Installing
 
