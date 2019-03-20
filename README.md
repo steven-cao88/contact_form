@@ -18,7 +18,7 @@ Clone the project and open index.html file on web browser to see result
 
 ## Running the tests
 
-Unit Test using [Jasmine] (https://jasmine.github.io/index.html)
+Unit Test using [Jasmine](https://jasmine.github.io/)
 
 Unit Test on Errors and Validator components
 
@@ -27,7 +27,7 @@ Open SpecRunner.html to see the test results
 
 ## Built With
 
-* [Jasmine] (https://jasmine.github.io/index.html) - Behavior-Driven JavaScript
+* [Jasmine](https://jasmine.github.io/) - Behavior-Driven JavaScript
 * [Bulma](https://bulma.io/) - a free, open source CSS framework
 
 
