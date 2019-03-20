@@ -1,0 +1,12 @@
+{
+  "name": "contact_form",
+  "version": "1.0.0",
+  "description": "Contact Form on Vanila JS",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [],
+  "author": "steven_cao <steven.cao@chekrite.com>",
+  "license": "MIT",
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+  <body>
+    <section class="hero is-fullheight">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div class="columns">
+            <div class="column is-4 is-offset-4">
+              <h3 class="title has-text-grey">Contact Form</h3>
+              <form id="input-details">
+                <p class="subtitle has-text-grey">Please fill in your contact details.</p>
+                <div class="box">
+                  <progress id="progress-bar" class="progress is-primary" value="0" max="100">0%</progress>
+                  <!-- Basic details -->
+                  <div class="step hidden">
+                    <div class="field">
+                      <div class="control">
+                        <input name="first_name" class="input is-large"
+                          type="text" placeholder="First Name" autofocus required>
+                      </div>
+                    </div>
+
+                    <div class="field">
+                      <div class="control">
+                        <input name="last_name" class="input is-large"
+                          type="text" placeholder="Last Name" required>
+                      </div>
+                    </div>
+
+                    <div class="field">
+                      <div class="control">
+                        <input name="email" class="input is-large"
+                          type="email" placeholder="Email" required>
+                      </div>
+                    </div>
+
+                    <div class="field">
+                      <div class="control">
+                        <input name="phone" class="input is-large"
+                          type="text" placeholder="Phone">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Basic Details -->
+                  <!-- Address Details -->
+                  <div class="step hidden">
+                    <div class="field">
+                      <div class="control">
+                        <input name="street_number" class="input is-large"
+                          type="text" placeholder="Street Number" required>
+                      </div>
+                    </div>
+
+                    <div class="field">
+                      <div class="control">
+                        <input name="street_name" class="input is-large"
+                          type="text" placeholder="Street Name" required>
+                      </div>
+                    </div>
+
+                    <div class="field">
+                      <div class="control">
+                        <div class="select is-large">
+                          <select name="street_type" required>
+                            <option value='' disabled selected>Street Type</option>
+                            <option value="Cl">Cl</option>
+                            <option value="Ct">Ct</option>
+                            <option value="St">St</option>
+                            <option value="Pl">Pl</option>
+                            <option value="Ave">Ave</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="field">
+                      <div class="control">
+                        <input name="suburb" class="input is-large"
+                          type="text" placeholder="Suburb" required>
+                      </div>
+                    </div>
+
+                    <div class="field">
+                      <div class="control">
+                        <input name="postcode" class="input is-large"
+                          type="text" placeholder="Postcode" required>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Address Details -->
+                  <!-- Buttons -->
+                  <div class="columns">
+                    <div class="column">
+                      <button class="button is-block is-info is-large is-fullwidth back">
+                        Back
+                      </button>
+                    </div>
+                    <div class="column">
+                      <button class="button is-block is-info is-large is-fullwidth next">Next</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="columns">
+            <!-- Submitted Details -->
+            <div class="column is-8 is-offset-2">
+              <div class="box hidden" id="submitted-details">
+                <h4>Contact Details are subbmitted as follows</h4>
+                <br>
+                <div class="columns is-multiline is-mobile" id="submitted-container">
+                  <!-- Submitted Data is injected here -->
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- End Submitted Details -->
+        </div>
+      </div>
+    </section>
+
+    <script src="index.js" defer></script>
+  </body>
+</html>
